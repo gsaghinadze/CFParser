@@ -23,49 +23,57 @@ public class Parser {
  
     public static HashSet<String> students = new HashSet<>(
             Arrays.asList(
-                    "Wikk",
-                    "irakli_p",
-                    "Anophoo",
-                    "levan_amateur",
-                    "ninokhaduri",
-                    "smileyface",
-                    "Gynecaladriel",
-                    "SWindrunner",
-                    "TheScienceGuy",
-                    "Jonah28",
-                    "tamuna_314",
-                    "e.ka55",
-                    "xosrika",
-                    "mtser15",
-                    "nenee",
-                    "lashamez",
-                    "z13",
-                    "Nop1ks",
-                    "DESmart18",
-                    "xarshila_",
-                    "Zmeshveliani",
-                    "l3o",
-                    "sano23",
-                    "shotakoba",
-                    "Gynecaladriel",
-                    "mtser15",
-                    "Alex_N",
-                    "NBara",
-                    "waska.chaduneli",
-                    "iuliatvali",
-                    "SIUS",
-                    "gsula15",
-                    "gvanjoba",
-                    "Luxon",
-                    "MT13",
-                    "sparrow2",
-                    "Brainrequired",
-                    "Qantrous",
-                    "myudroskad"
-                    
-  
+               "akhor16",
+               "AndriaToria",
+               "Brainrequired",
+               "bgoga16",
+               "dbejanishvili",
+               "cero",  
+               "gabadzeluka",
+               "giorobota",
+               "gogakoreli",
+               "ditotet",
+               "GrigalashviliT",
+               "gvancacucxashvili",
+               //"InDaBag",
+               "Jonah28",
+               "jsandro",
+               "keta_tsimakuridze",
+               "kvrivishvil1",
+               "lashamez",
+               "LukaTchumburidze",
+               "LashaBukhnikashvili",
+               "LTabidze",
+               "lbero15",
+               "matcharadze",
+               "mixo",
+               "mtser15",
+               "n999th",
+               "nikalosaberidze",
+               "plyr",
+               "Rezga",
+               "Saba_24",
+               "sano23",
+               "Sheng-O",
+               "SnapOutOfIt",
+               "Senshi",
+               "MT13",
+               "tamuna_314",
+               "TheScienceGuy",
+               "Valer123",
+               "waska.chaduneli",
+               "Wikk",
+               "Zoroo",
+               "Schikeria"
             ));
-    public static String[] contests = {"101512" , "100187" , "101532" , "100184" , "101498" , "101059" , "101606" , "101612" , "101611" , "101615" , "101608" , "101521", "101505"};
+    public static String[] contests = {
+    "101726",
+    "100253",
+    "101778",
+    "100187",
+    "101755",
+    "101649"
+    };
  
     public static void main(String[] args) throws Exception {
         HashMap<String, HashMap<String, Integer>> res = new HashMap<>();
@@ -155,12 +163,15 @@ public class Parser {
                     int grade = 0;
                     if (solved > 0 && solved * 100 >= maxGrade * 80) {
                         grade = 5;
-                    } else if (solved > 0 && solved * 100 >= maxGrade * 60) {
+                    } else if (solved > 0 && solved * 100 >= maxGrade * 65) {
                         grade = 4;
-                    } else if (solved > 0 && solved * 100 >= maxGrade * 35) {
+                    } else if (solved > 0 && solved * 100 >= maxGrade * 50) {
                         grade = 3;
-                    } else if (solved > 0) {
+                    } else if (solved > 0 && solved * 100 >= maxGrade * 35) {
                         grade = 2;
+                    }
+                    else if (solved > 0) {
+                        grade = 1;
                     }
  
                     curGrades.put(cont, grade);
