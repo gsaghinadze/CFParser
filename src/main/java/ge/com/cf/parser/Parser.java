@@ -64,7 +64,10 @@ public class Parser {
                "waska.chaduneli",
                "Wikk",
                "Zoroo",
-               "Schikeria"
+               "Schikeria",
+               "GiorgiLagidze",
+               "nkura14",
+               "ommo13"
             ));
     public static String[] contests = {
     "101726",
